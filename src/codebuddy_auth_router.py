@@ -20,7 +20,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # --- Constants ---
-CODEBUDDY_BASE_URL = 'https://www.codebuddy.ai'
+CODEBUDDY_BASE_URL = 'https://copilot.tencent.com'
 CODEBUDDY_AUTH_TOKEN_ENDPOINT = f'{CODEBUDDY_BASE_URL}/v2/plugin/auth/token'
 CODEBUDDY_AUTH_STATE_ENDPOINT = f'{CODEBUDDY_BASE_URL}/v2/plugin/auth/state'
 _last_auth_state: Optional[str] = None

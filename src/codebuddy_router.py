@@ -514,6 +514,7 @@ class CodeBuddyStreamService:
         try:
             client = await get_http_client()
             response = await client.post(get_codebuddy_api_url(), json=payload, headers=headers)
+            print(get_codebuddy_api_url(), payload, headers)
             
             if response.status_code != 200:
                 error_msg = response.text
